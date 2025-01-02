@@ -186,6 +186,6 @@ with open(tierListHTMLFileName, 'r', encoding='utf-8') as fileRead:
     for match in birdList:
         tierListHTML = re.sub(match[1], "<a href=\"https://navarog.github.io/wingsearch/card/" + match[0] + "\">" + match[1] + "</a>", tierListHTML)
 
-    fileWrite = open("output.html", "w", encoding='utf-8')
+    fileWrite = open("madeSearchable.html", "w", encoding='utf-8')
     fileWrite.write(tierListHTML)
     fileWrite.close()
